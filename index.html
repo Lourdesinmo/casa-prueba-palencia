@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta Exclusiva - Calle Palencia 8</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --fucsia: #dd116f;
+            --crema: #fdfaf5;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: white;
+            color: #1a1a1a;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .bg-fucsia { background-color: var(--fucsia); }
+        .text-fucsia { color: var(--fucsia); }
+        .border-fucsia { border-color: var(--fucsia); }
+        .bg-crema { background-color: var(--crema); }
+        
+        .hero-gradient {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card-shadow {
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.1);
+        }
+
+        .step-line::before {
+            content: '';
+            position: absolute;
+            top: 2rem;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            background: #e5e7eb;
+            z-index: 0;
+        }
+
+        @media (min-width: 768px) {
+            .step-line::before {
+                top: 50%;
+                left: 0;
+                width: 100%;
+                height: 2px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen flex items-center justify-center text-center text-white hero-gradient">
+        <div class="container mx-auto px-6 z-10">
+            <span class="inline-block px-4 py-1 mb-6 border border-white rounded-full text-sm uppercase tracking-widest bg-white/10 backdrop-blur-sm">Propuesta Exclusiva para Nuria y Ricardo</span>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">Marisa, así vamos a vender tu casa por un precio óptimo de mercado.</h1>
+            <p class="text-xl md:text-2xl mb-10 font-light max-w-3xl mx-auto">Análisis estratégico para la propiedad en Calle Palencia, 8. Obra nueva 2024 de 318 m².</p>
+            <a href="#valoracion" class="bg-fucsia hover:bg-opacity-90 transition-all text-white px-8 py-4 rounded-full font-semibold uppercase text-sm tracking-wider">Ver Estrategia de Venta</a>
+        </div>
+    </header>
+
+    <!-- Datos Propiedad -->
+    <section class="py-20 bg-crema">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-8">La Joya de Palencia, 8</h2>
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-fucsia/10 flex items-center justify-center rounded-lg text-fucsia">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-10V4m0 10V4m-4 6h4" /></svg>
+                            </div>
+                            <div>
+                                <p class="text-gray-500 text-sm">Superficie</p>
+                                <p class="text-lg font-semibold">318 m² de elegancia</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-fucsia/10 flex items-center justify-center rounded-lg text-fucsia">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                            </div>
+                            <div>
+                                <p class="text-gray-500 text-sm">Construcción</p>
+                                <p class="text-lg font-semibold">Año 2024 (Estado Impecable)</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-fucsia/10 flex items-center justify-center rounded-lg text-fucsia">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            </div>
+                            <div>
+                                <p class="text-gray-500 text-sm">Estado</p>
+                                <p class="text-lg font-semibold">Segunda mano, en perfecto estado</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop" alt="Fachada de lujo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa Competitivo -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-4">Mapa Competitivo del Entorno</h2>
+            <p class="text-center text-gray-500 mb-12">Cómo se posiciona vuestra casa frente al mercado actual en la zona.</p>
+            
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-gray-50 border-b border-gray-200">
+                            <th class="p-6 font-semibold text-gray-700">Propiedad</th>
+                            <th class="p-6 font-semibold text-gray-700">Precio de Mercado</th>
+                            <th class="p-6 font-semibold text-gray-700">Estado / Diferencial</th>
+                            <th class="p-6 font-semibold text-gray-700">Potencial</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-gray-100 hover:bg-crema/50 transition-colors">
+                            <td class="p-6 font-medium">Competencia A (Zona Palencia)</td>
+                            <td class="p-6 text-gray-600">300.000 €</td>
+                            <td class="p-6 text-gray-500 italic">Vivienda antigua, requiere reformas</td>
+                            <td class="p-6"><span class="bg-red-100 text-red-600 px-3 py-1 rounded-full text-xs">Venta Lenta</span></td>
+                        </tr>
+                        <tr class="border-b border-gray-100 hover:bg-crema/50 transition-colors">
+                            <td class="p-6 font-medium">Competencia B (Zona Palencia)</td>
+                            <td class="p-6 text-gray-600">355.000 €</td>
+                            <td class="p-6 text-gray-500 italic">Similar m², construcción 2018</td>
+                            <td class="p-6"><span class="bg-yellow-100 text-yellow-600 px-3 py-1 rounded-full text-xs">Ajustando Precio</span></td>
+                        </tr>
+                        <tr class="bg-fucsia/5 border-b-2 border-fucsia">
+                            <td class="p-6 font-bold text-fucsia">Calle Palencia, 8 (Vuestra Casa)</td>
+                            <td class="p-6 font-bold text-fucsia">Varios Escenarios</td>
+                            <td class="p-6 font-medium text-fucsia italic">Obra nueva 2024, máxima eficiencia</td>
+                            <td class="p-6"><span class="bg-fucsia text-white px-3 py-1 rounded-full text-xs font-bold">Máximo Valor</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Horquilla de Valoración -->
+    <section id="valoracion" class="py-20 bg-crema">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">Horquilla de Valoración Estratégica</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Mínimo -->
+                <div class="bg-white p-8 rounded-2xl card-shadow border-t-4 border-gray-300 transform hover:-translate-y-2 transition-transform">
+                    <h3 class="text-gray-500 uppercase tracking-widest text-sm mb-4">Precio Mínimo</h3>
+                    <p class="text-4xl font-bold mb-4">295.000€</p>
+                    <p class="text-gray-500 text-sm leading-relaxed">Escenario conservador para una venta relámpago en menos de 30 días.</p>
+                </div>
+                
+                <!-- Óptimo -->
+                <div class="bg-white p-8 rounded-2xl card-shadow border-t-8 border-fucsia transform hover:-translate-y-2 transition-transform relative">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-fucsia text-white text-[10px] px-4 py-1 rounded-full font-bold uppercase tracking-tighter">Nuestra Recomendación</div>
+                    <h3 class="text-fucsia uppercase tracking-widest text-sm mb-4 font-bold">Precio Óptimo</h3>
+                    <p class="text-5xl font-bold mb-4">315.000€</p>
+                    <p class="text-gray-600 font-medium leading-relaxed italic">"El Sweet Spot": Maximizamos vuestro beneficio sin perder el interés de los compradores premium.</p>
+                </div>
+
+                <!-- Máximo -->
+                <div class="bg-white p-8 rounded-2xl card-shadow border-t-4 border-gray-300 transform hover:-translate-y-2 transition-transform">
+                    <h3 class="text-gray-500 uppercase tracking-widest text-sm mb-4">Precio Techo</h3>
+                    <p class="text-4xl font-bold mb-4">330.000€</p>
+                    <p class="text-gray-500 text-sm leading-relaxed">Explotando al máximo el valor emocional de la obra nueva 2024.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap de Venta -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">Vuestro Viaje al Éxito: Roadmap de 5 Pasos</h2>
+            
+            <div class="relative flex flex-col md:flex-row justify-between items-start md:items-center space-y-12 md:space-y-0 step-line">
+                <!-- Paso 1 -->
+                <div class="relative z-10 text-center w-full md:w-1/5">
+                    <div class="w-16 h-16 bg-fucsia text-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg border-4 border-white font-bold text-xl">1</div>
+                    <h4 class="font-bold text-lg mb-2">Valoración</h4>
+                    <p class="text-sm text-gray-500 px-4">Análisis pericial y fijación de precio estratégico.</p>
+                </div>
+                <!-- Paso 2 -->
+                <div class="relative z-10 text-center w-full md:w-1/5">
+                    <div class="w-16 h-16 bg-fucsia text-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg border-4 border-white font-bold text-xl">2</div>
+                    <h4 class="font-bold text-lg mb-2">Papeleo</h4>
+                    <p class="text-sm text-gray-500 px-4">Gestión de certificados y auditoría legal completa.</p>
+                </div>
+                <!-- Paso 3 -->
+                <div class="relative z-10 text-center w-full md:w-1/5">
+                    <div class="w-16 h-16 bg-fucsia text-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg border-4 border-white font-bold text-xl">3</div>
+                    <h4 class="font-bold text-lg mb-2">Marketing</h4>
+                    <p class="text-sm text-gray-500 px-4">Fotografía premium y home staging emocional.</p>
+                </div>
+                <!-- Paso 4 -->
+                <div class="relative z-10 text-center w-full md:w-1/5">
+                    <div class="w-16 h-16 bg-fucsia text-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg border-4 border-white font-bold text-xl">4</div>
+                    <h4 class="font-bold text-lg mb-2">Lanzamiento</h4>
+                    <p class="text-sm text-gray-500 px-4">Filtrado de clientes y visitas de alta calidad.</p>
+                </div>
+                <!-- Paso 5 -->
+                <div class="relative z-10 text-center w-full md:w-1/5">
+                    <div class="w-16 h-16 bg-fucsia text-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg border-4 border-white font-bold text-xl">5</div>
+                    <h4 class="font-bold text-lg mb-2">Cierre</h4>
+                    <p class="text-sm text-gray-500 px-4">Negociación final y firma ante notario.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marketing Invisible -->
+    <section class="py-20 bg-crema">
+        <div class="container mx-auto px-6">
+            <div class="bg-fucsia text-white rounded-3xl p-12 overflow-hidden relative">
+                <div class="relative z-10">
+                    <h2 class="text-4xl font-bold mb-8">El Valor del "Marketing Invisible"</h2>
+                    <div class="grid md:grid-cols-2 gap-12">
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-4 flex items-center">
+                                <span class="bg-white/20 p-2 rounded-lg mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                                </span>
+                                Red Afilia: Fuerza en Red
+                            </h3>
+                            <p class="text-white/80 leading-relaxed">Vuestra propiedad no solo estará en portales; estará en el radar de más de 50 agencias locales colaboradoras desde el minuto 1. Multiplicamos el alcance, unificamos la excelencia.</p>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-4 flex items-center">
+                                <span class="bg-white/20 p-2 rounded-lg mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                                </span>
+                                Filtro de Solvencia
+                            </h3>
+                            <p class="text-white/80 leading-relaxed">No permitimos paseos. Solo clientes con solvencia financiera contrastada y pre-aprobación hipotecaria cruzarán vuestra puerta. Seguridad y eficiencia absoluta.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Decoración abstracta -->
+                <div class="absolute -bottom-20 -right-20 w-80 h-80 bg-white/10 rounded-full blur-3xl"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Final -->
+    <footer class="py-20 bg-white text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-6">Nuria, Ricardo... ¿empezamos?</h2>
+            <p class="text-gray-500 mb-10 max-w-xl mx-auto">Vuestra casa en Calle Palencia merece un trato de lujo. Estamos listos para aplicar esta estrategia hoy mismo.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <button onclick="window.print()" class="border-2 border-fucsia text-fucsia px-8 py-3 rounded-full font-bold hover:bg-fucsia hover:text-white transition-all">Guardar Propuesta PDF</button>
+                <button class="bg-fucsia text-white px-8 py-3 rounded-full font-bold hover:opacity-90 shadow-lg shadow-fucsia/20">Contactar con Marisa</button>
+            </div>
+            <p class="mt-12 text-xs text-gray-400 uppercase tracking-widest">Inmobiliaria Premium &copy; 2024 - Estrategia para Palencia 8</p>
+        </div>
+    </footer>
+
+</body>
+</html>
